@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20da45c034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+
+        <div class="container">
+
+            <nav>
+                <img src="image/LogoNN.png" class="logo"> 
+
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Services</a></li>
+                    <li> <a href="#Portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p> Hello,It's Me</p>
+                <h1>And I'm a <span class="multiple-text"></span></h1>
+                <h3>From Thiruchirapalli</h3>
+            </div>
+
+        </div>
+
+    </div>
+<!-------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/passport-photo.jpg" alt="Passport-Size-Photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titls">About Me</h1>
+                    <p>To start my career as a software developer, 
+                        using my skills inprogramming and problem-solving to contribute to innovativeprojects, 
+                        while continuously learning and improving in a dynamicwork environment.
+                        "Highly motivated to work in a challengingenvironment that would enhance my 
+                        skills and efforts to explore andadapt myself for an impressive performance.
+                    </p>
+
+                    <div class="titles">
+                        <p class="link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="link" onclick="opentab('education')">Education</p>
+                        <p class="link" onclick="opentab('project')">Project</p>
+                    </div>
+                    <div class="tap-contans active-tap" id="skills">
+                        <ul>
+                            <li><span>JAVA</span><br>Proficient in core programminglanguages <br>for developing software applications.</li>
+                            <li><span>Back-End Development</span> <br> Understanding of back-endtechnologies and frameworks like <span>Spring Boot</span>.</li>
+                            <li><span>DatabaseManagement</span><br>Familiar with database systemslike SQL database. <br> Capable of writing SQL queries toretrieve and manipulate data.</li>
+                            <li><span>Web Development</span><br>Basic knowledge of front-endtechnologies like <span> HTML, CSS, JavaScript, and frameworksand React</span>.</li>
+                            <li><span>Team Collaboration & Communication</span><br>Ability tocollaborate with cross-functional teams, contribute to codereviews, <br>and clearly communicate technical ideas.</li>
+                        </ul>
+                    </div>
+                    <div class="tap-contans" id="education">
+
+                        <ul>
+                            <li><span>2024</span><br>MCA from Bharathidasan University Thiruchirapalli. <br> 70%</li>
+                            <li><span>2022</span><br>BSc Computer Science from Srimad Andavan Arts & Science Collage at Thiruchirapalli. <br>83%</li>
+                        </ul>
+
+                    </div>
+                    <div class="tap-contans" id="project">
+                        <ul>
+                            <li><span>Anomaly Detection</span><br> I completed my MCA from Meston College, Chennai, in 2024. During my final year,<br> I worked on a project titled 'Anomaly Detection using python</li>
+                            <li><span>Online Bookstore</span><br>OOP (Object-Oriented Programming) – Used for
+creating product and user classes with attributes and methods.
+Inheritance and Polymorphism – For handling different book
+categories.Collections ArrayList and HashMap for managing book data
+and cart.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- ----- Services ----- --->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-titls">Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Backend Development</h2>
+                <p>I develop RESTful APIs and server-side logic using Java and Spring Boot
+                     with proper authentication and database integration.</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>  Database Management</h2>
+                <p>Familiar with database systemslike SQL database. Capable of writing SQL queries toretrieve and manipulate data.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Full Stack Development</h2>
+                <p>Complete end-to-end web application development using frontend + backend + database with smooth integration.</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>Web Development</h2>
+                <p>I create responsive and user-friendly websites using HTML, CSS, JavaScript, and React.js or Bootstrap.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+
+ </div>
+ <!-------------------- Portfolio ----------------------->
+
+ <div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-titls">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/dd.jpeg" alt="Back-End developer">
+                <div class="layer">
+                    <h3>SQL</h3>
+                    <p>I can design efficient, normalized databases using Oracle SQL. <br> I write optimized queries, manage sequences, triggers, and stored procedures using PL/SQL.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+             <div class="work">
+                <img id="fr" src="image/WhatsApp Image 2025-05-13 at 2.43.02 AM (1).jpeg" alt="Front-End developer" >
+                 <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>I create responsive websites using HTML, CSS, and JavaScript, and build RESTful APIs using Java and Spring Boot.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img id="be" src="image/WhatsApp Image 2025-05-13 at 2.43.03 AM.jpeg" alt="Database developer">
+                 <div class="layer">
+                    <h3>JAva</h3>
+                    <p>I am skilled in Core Java and <span> Spring Boot </span>for building backend web applications and REST APIs. <br>
+I have experience in developing scalable APIs, integrating databases using Spring Data JPA, and managing backend logic with Java.
+
+</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ptn">See more</a>
+
+    </div>
+
+ </div>
+
+ <!-- ---------- Contact ---------- -->
+
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <div class="sub-titls">Contact Me</div>
+                <p><i class="fa-solid fa-paper-plane"></i>abisekapriyan</p>
+                <p><i class="fa-solid fa-mobile-screen"></i>6380903262</p>
+                <div class="sochil-icon">
+                    <a href="http://github.com/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://script.google.com/macros/s/AKfycbyzHhMzJhIWqYP-eD1JtL-O6gar0WPitnkK3cbipQYcm9Y3Uz3ox4yWIIEO4E9XUhqv/exec" id="nakuri"><i class="fa-solid fa-earth-americas"></i></a>
+                    <a href="https://www.instagram.com/ap_fireman/?next=%2F"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://leetcode.com/problemset/"><i class="fa-solid fa-laptop-code"></i></a>
+                </div>
+                <a href="image/Abi_resume_23.pdf" download class="ptn btn" >Dowenload CV</a>
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="name" required>
+                    <input type="email" name="Email" placeholder="email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" id="message"></textarea>
+                    <button type="submit" id="sub" class="ptn btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="buttom-line">
+        <p>Software Developer</p>
+    </div>
+ </div>
+
+
+<!------- --------- Java Script ----------- ---------->
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        const typed = new Typed('.multiple-text', {
+        strings: ['Software Developer', 'Spring Boot', 'Backend Developer', 'Frontend Developer'],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 500,
+        loop: true
+        });
+
+        var links = document.getElementsByClassName("tablinks");
+        var tapcontans = document.getElementsByClassName("tap-contans");
+
+        function opentab(tabname){
+            for(link of links){
+                link.classList.remove("active-link");
+            }
+
+            for(tapcontan of tapcontans){
+                tapcontan.classList.remove("active-tap");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tap");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyzHhMzJhIWqYP-eD1JtL-O6gar0WPitnkK3cbipQYcm9Y3Uz3ox4yWIIEO4E9XUhqv/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
